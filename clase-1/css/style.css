@@ -8,6 +8,7 @@ body{
 }
 h1{
     text-align: center;
+    color: rgb(19, 19, 53);
 }
 
 header{
@@ -47,7 +48,7 @@ header img{
 
 
 li{
-    color: black;
+    color: rgb(34, 21, 70);
     display: inline-block;
     text-align: center;
     width: 80px;
