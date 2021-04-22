@@ -1,28 +1,54 @@
-var numero1 = 45;
-// ciclo for//
-var i =0;
-for(i=0; i<=10; i++ ){
-    console.log("la variable se incremento y ahora vale:" + i)
+var cardsByN = document.querySelectorAll(".cardsByN");
+
+var cardobj =[{ 
+    claseblanca: 'h-100 p-5 text-white bg-dark rounded-3 opacity',
+    cuerpo: '<div class="h-100 p-5 text-white bg-dark rounded-3 opacity"><h2>Change the background</h2><p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p><button class="btn btn-outline-light" type="button">Example button</button></div>'
+},
+{ 
+    claseblanca: 'h-100 p-5 bg-light border rounded-3 opacity',
+    cuerpo: '<div class="h-100 p-5 bg-light border rounded-3 opacity"><h2>Change the background</h2><p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p><button class="btn btn-outline-light" type="button">Example button</button></div>'
+},
+{ 
+    claseblanca: 'h-100 p-5 bg-light border rounded-3 opacity',
+    cuerpo: '<div class="h-100 p-5 bg-light border rounded-3 opacity"><h2>Change the background</h2><p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p><button class="btn btn-outline-light" type="button">Example button</button></div>'
+},
+{ 
+    claseblanca: 'h-100 p-5 text-white bg-dark rounded-3 opacity',
+    cuerpo: '<div class="h-100 p-5 text-white bg-dark rounded-3 opacity"><h2>Change the background</h2><p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p><button class="btn btn-outline-light" type="button">Example button</button></div>'
+}
+];
+
+
+for (let index = 0; index <cardsByN.length; index++) {
+    cardsByN[index].innerHTML = cardobj[index].cuerpo;
+    
 }
 
-var arreglo1 = ["amor", 24, "array2", 64]
-for(i=0; i<arreglo1.length; i++){
-    console.log("el dato del arreglo en este punto es " + arreglo1[i])
+//cardsByN[1].style.backgroundColor = "white !important";
+
+var menu = document.querySelectorAll(".botones");
+
+var botones = [
+    {
+        texto: 'inicio',
+        cuerpo: '<a href=""><li>inicio</li></a>'
+    },
+    {
+        texto: 'Terapias',
+        cuerpo: '<a href=""><li>Terapias</li></a>'
+    },
+    {
+        texto: 'Sobre mi',
+        cuerpo: '<a href=""><li>Sobre mi</li></a>'
+    },
+    {
+        texto: 'Contacto',
+        cuerpo: '<a href=""><li>Contacto</li></a>'
+    }
+]
+
+
+for (let index = 0; index <cardsByN.length; index++) {
+    menu[index].innerHTML = botones[index].cuerpo;
+    
 }
-
-//ciclo while
-var i = 0
-while(i< arreglo1.length){
-    console.log("ciclo while iterando en arreglo1 = ", arreglo1[i])
-    i++
-
-}
-//funciones
-
-function saludos(nombre){
-
-  return ("mensaje de funcion " + nombre)
-
-}
-
-console.log(saludos("juan"))
