@@ -26,3 +26,9 @@ function saludos(nombre){
 }
 
 console.log(saludos("juan"))
+
+function mifuncion(palabra1, palabra2) {
+
+    return (palabra1 + " el otro nombre es " + palabra2);    
+}
+console.log(mifuncion("julio", "pedro"))
