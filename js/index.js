@@ -80,10 +80,24 @@ function ItemMenu (nombre, direccion, clase){
 }
 
 var menuItems = ['Inicio', 'Terapias', 'Sobre mi', 'Contacto'];
-
+var links = [
+    './index.html',
+    './index.html',
+    './index.html',
+    './index.html'
+   
+]
 var menu = document.querySelectorAll("ul");
 
 for (let index = 0; index < menuItems.length; index++) {
-    const element = new ItemMenu (menuItems[index],"./" + menuItems[index] + ".html", "menu" )
+    const element = new ItemMenu (menuItems[index],  links[index], "menu" )
     menu[0].innerHTML += element.cuerpoHtml();
 }
+/////////////////////////////menu evento click//////////////////////
+
+const btnMenu = document.querySelector("#btn-menu");
+
+
+btnMenu.addEventListener("click", function(){
+menu.classlist.toggle("mostrar");
+});

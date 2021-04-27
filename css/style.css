@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     width: 100%;
     margin: 0;
@@ -9,7 +12,14 @@ body{
 header{
     background-color: #c6e3ef;
 }
-
+#btn-menu{
+display:none;
+cursor: pointer;
+}
+.nav-bar{
+    cursor: pointer;
+    
+}
 
 
 .titulo h1{
@@ -30,7 +40,7 @@ header{
     object-fit: cover;
 }
 
-.header img{
+#logo{
     padding: 5px;
     width: 80px;
     height: 80px;
@@ -68,7 +78,7 @@ header{
 
 
 li{
-    color: darkblue;
+    color: rgb(5, 5, 32);
     display: inline-block;
     text-align: center;
     width: 80px;
