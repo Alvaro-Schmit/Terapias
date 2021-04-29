@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0;
+    background-image: url(../imagen/fondoTerapias.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;;
+}
+header{
+    background-color: #c6e3ef;
+}
+#btn-menu{
+display:none;
+
+}
+label img{
+    display:none;
+   
+    }
+.nav-bar{
+    cursor: pointer;
+    
+}
+
+
+.titulo h1{
+    text-align: center;
+    color: darkblue;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+.header{
+    width: 100%;
+  
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+#logo{
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+   
+}
+
+
+
+#img001{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0.9;
+   
+}
+.textosobreimagen{
+    background-color: #c3c0d1;
+    opacity: 0.9;
+    padding: 5%;
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 8%;
+    text-align: center;
+    z-index: 20;
+    position: absolute;
+    box-sizing: border-box;
+}
+.container-fluid{
+    margin:0px !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+li{
+    color: rgb(5, 5, 32);
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+   border-radius: 3px;
+    background-color:  #7593cd;;
+    padding: 5px;
+    margin: 10px;
+    border: rgb(42, 42, 48) solid 1px;
+}
+ul{
+    text-align: right;
+    text-decoration: none;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.opacity{
+    opacity: 0.9;
+}

@@ -1,0 +1,4 @@
+Pedro te dejo algunos detalles que no consigo resolver
+
+1--- no puedo hacer que el menu desplegable que diseñe para tablets y celulares tome color . queda siempre transparente y no es la idea.
+2---
