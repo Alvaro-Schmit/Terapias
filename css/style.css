@@ -14,8 +14,12 @@ header{
 }
 #btn-menu{
 display:none;
-cursor: pointer;
+
 }
+label img{
+    display:none;
+   
+    }
 .nav-bar{
     cursor: pointer;
     
@@ -58,11 +62,11 @@ cursor: pointer;
 }
 .textosobreimagen{
     background-color: #c3c0d1;
-    opacity: 0.7;
+    opacity: 0.9;
     padding: 5%;
     border-radius: 10px;
     width: 90%;
-    margin-top: 10%;
+    margin-top: 8%;
     text-align: center;
     z-index: 20;
     position: absolute;

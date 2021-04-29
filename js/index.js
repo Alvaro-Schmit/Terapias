@@ -98,6 +98,6 @@ for (let index = 0; index < menuItems.length; index++) {
 const btnMenu = document.querySelector("#btn-menu");
 
 
-btnMenu.addEventListener("click", function(){
-menu.classlist.toggle("mostrar");
-});
+// btnMenu.addEventListener("click", function(){
+// menu.classlist.toggle("mostrar");
+// });
