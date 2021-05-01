@@ -21,49 +21,21 @@ var cardobj =[{
 
 for (let index = 0; index <cardobj.length; index++) {
     cardsByN[0].innerHTML += cardobj[index].cuerpo;
-    
+  
 }
 
+//cardsByN[0].children[0].style.marginBottom="20px";
 
+for (let index = 0; index < cardsByN[0].length; index++) {
+    cardsByN[0].children[index].style.marginBottom="20px"
+
+}
+
+/// aca intente hacer un for para que cada card tuviera margin botoom de 20px
 
 
 
 /////////////// CREAR CONSTRUCTOR ///////////////////////////
-
-
-
-
-
-
-
-//cardsByN[1].style.backgroundColor = "white !important";
-
-// var menu = document.querySelectorAll("ul");
-
-// var botones = [
-//     {
-//         texto: 'inicio',
-//         cuerpo: '<a href=""><li>inicio</li></a>'
-//     },
-//     {
-//         texto: 'Terapias',
-//         cuerpo: '<a href=""><li>Terapias</li></a>'
-//     },
-//     {
-//         texto: 'Sobre mi',
-//         cuerpo: '<a href=""><li>Sobre mi</li></a>'
-//     },
-//     {
-//         texto: 'Contacto',
-//         cuerpo: '<a href=""><li>Contacto</li></a>'
-//     }
-// ]
-// //arreglar arreglo. llenar arreglo botones mediante for.
-
-// for (let index = 0; index <botones.length; index++) {
-//     menu[0].innerHTML += botones[index].cuerpo;
-    
-// }
 
 
 
@@ -78,7 +50,7 @@ function ItemMenu (nombre, direccion, clase){
         return '<a href="'+ this.direccion + '"><li class="'+ this.clase + '">'+ this.nombre +'</li></a>'
     }
 }
-
+//manejar esto con un arreglo de obj
 var menuItems = ['Inicio', 'Terapias', 'Sobre mi', 'Contacto'];
 var links = [
     './index.html',
@@ -93,11 +65,23 @@ for (let index = 0; index < menuItems.length; index++) {
     const element = new ItemMenu (menuItems[index],  links[index], "menu" )
     menu[0].innerHTML += element.cuerpoHtml();
 }
+
+
+
+
+
 /////////////////////////////menu evento click//////////////////////
 
 const btnMenu = document.querySelector("#btn-menu");
 
 
-// btnMenu.addEventListener("click", function(){
-// menu.classlist.toggle("mostrar");
-// });
+
+btnMenu.addEventListener("click", function(){
+
+menuMovil[0].style.marginTop="200px"
+
+  // dos cosas que no me estan salienso
+  //  1) n o se como hacer que vuelva a esconderse la barra de menu cuando hago click de nuevo
+  //   2) me desplaza los elemento que tengo por debajo. yo prefiero que se desplace por encima y darle una transparencia a todo el elemento.
+    
+});

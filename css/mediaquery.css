@@ -81,12 +81,13 @@ width: 100%;
    
    
 }
-#btn-menu:checked ~ .main-nav{
+/* #btn-menu:checked ~ .main-nav{
     transition: all 0.8s;
     margin-top: 200px;
+opacity: 1;
   
     
-}
+} */
 a{
     text-decoration: none;
 }
