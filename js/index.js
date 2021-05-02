@@ -26,12 +26,12 @@ for (let index = 0; index <cardobj.length; index++) {
 
 //cardsByN[0].children[0].style.marginBottom="20px";
 
-for (let index = 0; index < cardsByN[0].length; index++) {
+for (let index = 0; index < cardsByN[0].children.length; index++) {
     cardsByN[0].children[index].style.marginBottom="20px"
 
 }
 
-/// aca intente hacer un for para que cada card tuviera margin botoom de 20px
+
 
 
 
@@ -73,15 +73,39 @@ for (let index = 0; index < menuItems.length; index++) {
 /////////////////////////////menu evento click//////////////////////
 
 const btnMenu = document.querySelector("#btn-menu");
+var menuMovil = document.querySelectorAll("ul");
+contador = 0;
+titulo = document.querySelector("#titulo")
+logo = document.getElementById("logo")
+
+btnMenu.addEventListener("click", function()
+
+{
+
+    if (contador==0 && innerWidth < 1024) {
+        menuMovil[0].style.marginTop="-80px"  
+        menuMovil[0].style.backgroundColor="blue"  
+        titulo.style.visibility = "hidden"
+        logo.style.visibility = "hidden"
+        
+
+    contador=1;
+    }
+    else {
+        menuMovil[0].style.marginTop="-280px"  
+        titulo.style.visibility = "visible"
+        logo.style.visibility = "visible" 
+
+    contador=0;
+    }
+    
+    
 
 
+});
 
-btnMenu.addEventListener("click", function(){
 
-menuMovil[0].style.marginTop="200px"
-
-  // dos cosas que no me estan salienso
-  //  1) n o se como hacer que vuelva a esconderse la barra de menu cuando hago click de nuevo
+  // una cosas que no me estan salienso
+ 
   //   2) me desplaza los elemento que tengo por debajo. yo prefiero que se desplace por encima y darle una transparencia a todo el elemento.
     
-});

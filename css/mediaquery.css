@@ -18,7 +18,7 @@ label img{
 }
 
 
-.titulo h1{
+#titulo h1{
     text-align: center;
     color: darkblue;
     padding-bottom: 10px;
@@ -81,7 +81,7 @@ width: 100%;
    
    
 }
-/* #btn-menu:checked ~ .main-nav{
+/* #btn-menu:checked ~ .clickmenu{
     transition: all 0.8s;
     margin-top: 200px;
 opacity: 1;
